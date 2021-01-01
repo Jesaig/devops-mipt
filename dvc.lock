@@ -1,0 +1,31 @@
+kekker:
+  cmd: python kek.py
+  deps:
+  - path: kek.py
+    md5: 8f4e86d0181312a5a113ad27e4944db4
+    size: 64
+splitter:
+  cmd: python3 train_val_split.py
+  deps:
+  - path: data
+    md5: 33e41f1ae8e40531f7384a707b673eee.dir
+    size: 3359392259
+    nfiles: 8777
+  - path: train_val_split.py
+    md5: fb3b9fd10f87c39490e7c675b7f0e9e5
+    size: 1453
+model_train:
+  cmd: python3 model_train.py
+  deps:
+  - path: data
+    md5: 1267b1289f85555807131edc0a23cf3f.dir
+    size: 3271994951
+    nfiles: 8449
+  - path: model_train.py
+    md5: 0764b9115aadf8a278a3770ec02ccc7e
+    size: 8018
+  outs:
+  - path: cnnmodel.cbm
+    md5: 618ffbdd8c3ef13f5a33d7cedb534005.dir
+    size: 4800869
+    nfiles: 4

@@ -1,0 +1,17 @@
+stages:
+  kekker:
+    cmd: python kek.py
+    deps:
+    - kek.py
+  splitter:
+    cmd: python3 train_val_split.py
+    deps:
+    - data
+    - train_val_split.py
+  model_train:
+    cmd: python3 model_train.py
+    deps:
+    - data
+    - model_train.py
+    outs:
+    - cnnmodel.cbm
