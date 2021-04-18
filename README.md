@@ -1,4 +1,4 @@
-# Tasks of course "Devops" in MIPT
+# Tasks of the course "Devops" in MIPT
 
 - [dev env](https://github.com/Jesaig/devops-mipt/tree/master/generator-of-texts)  
 Setting up development environment with vagrant and puppet
